@@ -63,10 +63,32 @@ Key steps included:
 
 ## Sample Business Questions Answered
 
-- What products generate the highest revenue?
-- Which countries have the most transactions?
-- Are there customers that generate most of the business?
-- What percentage of orders are canceled?
+-  **Which products generate the highest revenue?**  
+  → Identified top 10 products using revenue aggregation (`SUM(revenue)`)
+
+-  **Which countries have the most transactions and revenue?**  
+  → Analyzed `COUNT(DISTINCT InvoiceNo)` and `SUM(revenue)` grouped by `Country`
+
+-  **Who are the most valuable customers?**  
+  → Calculated Customer Lifetime Value and top 3 customers by country (window function)
+
+-  **What percentage of orders are canceled?**  
+  → Used flags on `InvoiceNo` and calculated cancellation rates by country
+
+-  **Which products are most frequently returned?**  
+  → Queried canceled transactions grouped by `Description`
+
+-  **Are there seasonal or monthly sales trends?**  
+  → Grouped by `yearmonth` to assess revenue trends over time
+
+-  **What is the average order value and how do orders segment by spend?**  
+  → Derived using subqueries and case conditions for "High Value" vs "Regular"
+
+-  **When are customers most active during the day?**  
+  → Extracted order timestamps to identify peak purchase hours
+
+-  **How many customers are repeat buyers?**  
+  → Classified customers as “Repeat” or “One-Time” using invoice counts
 
 ---
 
@@ -81,6 +103,6 @@ Key steps included:
 **Sadia Hossain**  
 MSc Data Science | SQL • Python • Power BI  
 sadiahossain2101@gmail.com  
-🔗 [LinkedIn Profile](https://linkedin.com/in/yourprofile)
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/sadia-hossain-297993251/)
 
 ---
